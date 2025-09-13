@@ -1,0 +1,94 @@
+[
+    {
+        "id": "e8ffa62ac460c334",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6f2b4388b9b3f1c9",
+        "type": "mqtt in",
+        "z": "e8ffa62ac460c334",
+        "name": "",
+        "topic": "sensor/dht/passaabola",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "16e2418f709e1c52",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "fe585440f10a746f"
+            ]
+        ]
+    },
+    {
+        "id": "fe585440f10a746f",
+        "type": "json",
+        "z": "e8ffa62ac460c334",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "78c4989933966ccf"
+            ]
+        ]
+    },
+    {
+        "id": "78c4989933966ccf",
+        "type": "debug",
+        "z": "e8ffa62ac460c334",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "16e2418f709e1c52",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
