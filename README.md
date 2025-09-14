@@ -1,13 +1,10 @@
 # aviso-irrigacao-iot
 
 ## 📌 Descrição do Projeto
-
 Este projeto utiliza um **ESP32** conectado a um sensor **DHT22** para monitorar **temperatura e umidade** em tempo real.
-
 Os dados são enviados via **MQTT** para o **Node-RED**, onde podem ser processados, visualizados em dashboards e utilizados para **entender se a irrigação do campo deve ser ligada ou desligada**.
 
 A lógica implementada:
-
 - Se **temperatura ≥ 28°C** ou **umidade ≤ 40%** é emitido um aviso para que a irrigação seja ligada (LIGAR).
 - Caso contrário, o aviso é para que a irrigação seja desligada (DESLIGAR).
 
@@ -16,8 +13,16 @@ A lógica implementada:
 ## 🏗️ Arquitetura Proposta
 
 🔹 Diagrama da Arquitetura
+<img src="https://github.com/user-attachments/assets/c4abbf86-1a12-4733-9769-9eaa7c0972ac" alt="Arquitetura do Projeto" width="350px">
 
 🔹 Explicação
+1. **Sensor DHT22**: Coleta os valores de **temperatura e umidade**.  
+2. **ESP32**: Faz a leitura dos dados e publica via **MQTT** no broker.  
+3. **Mosquitto Broker**: Recebe e distribui as mensagens publicadas no tópico `sensor/dht/passaabola`.  
+4. **Node-RED**:  
+   - Interpreta os dados JSON recebidos.  
+   - Exibe em **debug** ou dashboards (gauge, gráficos, etc).  
+   - Pode acionar atuadores para controle da irrigação.
 
 ---
 
