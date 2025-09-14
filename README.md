@@ -1,4 +1,11 @@
-# aviso-irrigacao-iot
+# Controle de Irrigação baseado em Temperatura e Umidade
+
+## 👥 Integrantes
+- Guilherme de Melo Sorrilha
+- Guilherme Rodrigues de Andrade
+- Victor Antonio Teixeira da Silva
+- Gusthavo Costa de Melo
+- Lucas Costa Zago
 
 ## 📌 Descrição do Projeto
 Este projeto utiliza um **ESP32** conectado a um sensor **DHT22** para monitorar **temperatura e umidade** em tempo real.
@@ -13,7 +20,8 @@ A lógica implementada:
 ## 🏗️ Arquitetura Proposta
 
 🔹 Diagrama da Arquitetura
-<img src="https://github.com/user-attachments/assets/c4abbf86-1a12-4733-9769-9eaa7c0972ac" alt="Arquitetura do Projeto" width="350px">
+
+<img src="https://github.com/user-attachments/assets/c4abbf86-1a12-4733-9769-9eaa7c0972ac" alt="Arquitetura do Projeto" width="700px">
 
 🔹 Explicação
 1. **Sensor DHT22**: Coleta os valores de **temperatura e umidade**.  
