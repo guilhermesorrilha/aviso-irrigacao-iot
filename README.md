@@ -42,6 +42,8 @@ A lógica implementada:
 - Jumpers e protoboard (ou conexão direta)
 - Fonte USB
 
+<img src="https://github.com/user-attachments/assets/fdea828e-952d-48db-8276-5c11ddedf611" alt="Foto do circuito físico" width="250px">
+
 ### 🔹 Software
 
 - [Arduino IDE](https://www.arduino.cc/en/software)
