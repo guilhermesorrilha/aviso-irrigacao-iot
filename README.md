@@ -5,7 +5,7 @@
 - Guilherme Rodrigues de Andrade
 - Victor Antonio Teixeira da Silva
 - Gusthavo Costa de Melo
-- Lucas Costa Zago
+- Lucas Oliveira de Mendonça Almeida
 
 ## 📌 Descrição do Projeto
 Este projeto utiliza um **ESP32** conectado a um sensor **DHT22** para monitorar **temperatura e umidade** em tempo real.
